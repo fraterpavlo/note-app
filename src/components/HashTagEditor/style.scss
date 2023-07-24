@@ -1,0 +1,24 @@
+.hashtag-editor {
+  border: 1px solid gray;
+
+  &.hasFocus {
+    border: 2px solid rgb(77, 77, 77);
+
+    & .public-DraftEditorPlaceholder-inner {
+      display: none;
+    }
+  }
+
+  & .public-DraftEditorPlaceholder-inner {
+    color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+.hashtag-editor__tag {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.DraftEditor-root {
+  display: flex;
+}

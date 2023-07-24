@@ -1,0 +1,37 @@
+.form {
+  &__inner-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+  }
+
+  &__editor {
+    padding: 14px 16px;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.23);
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.4375em;
+    letter-spacing: 0.00938em;
+    // color: rgba(0, 0, 0, 0.6);
+
+    &_invalid {
+      border: 2px solid red;
+    }
+
+    &.hasFocus {
+      border: 2px solid #1976d2;
+      // color: rgba(0, 0, 0, 0.87);
+    }
+  }
+
+  &__tags-output {
+    min-height: 25px;
+  }
+}
+
+.form__editor .hashtag-editor__tag {
+  color: #1976d2;
+}
