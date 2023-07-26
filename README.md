@@ -15,4 +15,4 @@
 
 
 
-# [Нажмите](https://astounding-boba-ac21a5.netlify.app/), чтобы открыть приложение.
+# [Нажмите](https://jocular-paletas-8d0b6f.netlify.app/), чтобы открыть приложение.
