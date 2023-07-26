@@ -36,7 +36,6 @@ const CreateNoteForm = () => {
     };
 
     const noteDataWithApiId = await addNote(noteData);
-    console.log(noteDataWithApiId);
 
     dispatch(addNoteInState(noteDataWithApiId));
   };

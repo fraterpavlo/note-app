@@ -31,11 +31,12 @@ const NotesList = () => {
     []
   );
 
-  function onChangeTagFilterInput(
+  async function onChangeTagFilterInput(
     event: SyntheticEvent<Element, Event>,
     selectedValues: string[]
   ) {
     setValueOfTagFilterInput(selectedValues);
+    await dispatch(fetchNotesData(BASE_URL));
     dispatch(changeFilterSelectedTags(selectedValues));
   }
 
@@ -49,7 +50,7 @@ const NotesList = () => {
 
   useEffect(() => {
     dispatch(fetchNotesData(BASE_URL));
-  }, [filters]);
+  }, []);
 
   const notesList = useMemo(() => {
     return notesData.map((itemData) => (
